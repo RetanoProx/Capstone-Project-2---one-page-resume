@@ -1,0 +1,201 @@
+.jura-font2 {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ramabhadra-regular {
+    font-family: "Ramabhadra", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.gradient1 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.main-img {
+    z-index: 1;
+    margin: 0px;
+    grid-area: 1 / 2 /-2/-5;
+    max-width: 100%;
+    height: auto;
+
+}
+
+h1 {
+    z-index: 2;
+    margin: 0px;
+    grid-area: 4 / 1 /-6/-1;
+    text-align: center;
+}
+
+h1  {color: white; font-size: 7rem; font-family: Ramabhadra;}
+
+.font1 {
+    z-index: 2;
+    margin: 0;
+    grid-area: 6 / 1 /-5/-1;
+    text-align: center;
+}
+
+.font1  {color: white; font-size: 3rem; font-family: Jura ;}
+
+.line {
+    z-index: 2;
+    margin: 0;
+    grid-area: 9 / 1 /-2/-1;
+    text-align: center;
+}
+
+.line {color: white; font-size: 2rem; z-index: 2;}
+
+.about {
+    height: auto;
+    width: 100%;
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.about-img {
+        width: 100%;
+        height: auto;
+        grid-area: 1 / 1 /-1/-1;
+}
+
+.aboutme {
+    grid-area: 2 / 1 /-6/-4;
+    color: white;
+    z-index: 1;
+    margin: 0 25px 0 67px;
+    font-size: 37px;
+    font-family: Jura ;
+}
+
+.emblems {
+    grid-area: 2 / 6 /-4/-2;
+    height: auto;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.gradient {
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(149deg, #04441b 0%, #032e12 42%, #021d0b 72%, #011207 100%);
+    background-size: 400% auto; 
+    animation: gradientAnimation 5s linear infinite; 
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.gradient p {
+    margin: 0 10px;
+    font-family: Jura ;
+}
+
+
+
+.gradient1 {
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(149deg, #04441b 0%, #032e12 42%, #021d0b 72%, #011207 100%);
+    background-size: 400% auto; 
+    animation: gradientAnimation 5s linear infinite; 
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .aboutme {
+        margin: 0 0 0 25px;
+        font-size: 25px;
+    }
+
+    .emblems {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutme {
+        margin:0 25px 0 57px;
+        font-size: 25px;
+    }
+
+    .emblems {
+        margin-left:100px;
+    }
+}
+
+@media (max-width: 990px) {
+    .aboutme {
+        margin:0 25px 0 43px;
+        font-size: 22px;
+    }
+
+    .emblems {
+        margin-left:50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutme {
+        margin:0 0 0 40px;
+        font-size: 17px;
+    }
+
+    .emblems {
+        margin-left:50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutme {
+        margin:0 0 0 40px;
+        font-size: 12px;
+    }
+
+    .emblems {
+        margin-left:50px;
+    }
+}
